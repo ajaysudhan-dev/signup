@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen flex justify-center items-center p-4">
+
+<div class="bg-white w-full max-w-md p-6 rounded-xl shadow-lg">
+
+<h1 class="text-3xl font-bold text-center mb-6">
+Sign In
+</h1>
+
+<form id="signinForm" class="space-y-4">
+
+<input
+id="loginEmail"
+type="email"
+placeholder="Email"
+class="w-full border rounded-lg p-3"
+/>
+
+<p id="emailError" class="text-red-500 text-sm"></p>
+
+<div class="relative">
+
+<input
+id="loginPassword"
+type="password"
+placeholder="Password"
+class="w-full border rounded-lg p-3"
+/>
+
+<button
+type="button"
+onclick="togglePassword('loginPassword')"
+class="absolute right-3 top-3"
+>
+👁
+</button>
+
+</div>
+
+<p id="passwordError" class="text-red-500 text-sm"></p>
+
+<button
+class="w-full bg-green-600 text-white p-3 rounded-lg hover:bg-green-700"
+>
+Login
+</button>
+
+<p class="text-center">
+
+Don't have an account?
+
+<a
+href="signup.html"
+class="text-blue-600 font-semibold"
+>
+Sign Up
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+<script src="signin.js"></script>
+
+</body>
+</html>
