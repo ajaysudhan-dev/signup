@@ -23,7 +23,7 @@ document
         password === user.password
     ){
         window.location.href =
-        "home.html";
+        "index.html";
     }
     else{
         alert("Invalid Email or Password");
